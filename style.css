@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+
+
+
+:root {
+    --cor1: #000000;
+    --cor2: #ffffff;
+  }
+  /*
+        background-color: var(--verde-escuro);
+        color: var(--verde-claro);
+  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Cinzel', serif;
+    background-image: linear-gradient(45deg, #363030, #000000);
+    background-attachment: fixed;
+}
+
+header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 300px;
+    width: 100%;
+}
+
+a{
+    text-align: center;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    transition: 0.5s;
+}
+
+
+section{
+    margin: auto;
+    margin-top: 20px;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: var(--cor2);
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 400px;
+    width: 100%;
+}
+
+p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.foto{
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 280px;
+}
+
+.foto:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+    padding: 10px;
+    margin: 0px;
+}
+
+.quadro{
+    display: inline-block;
+    padding: 10px;
+}
+
+/*gif*/
+
+#gif{
+    background-image: url('gif/pato.gif');
+    text-align: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100px;
+    height: 125px; 
+}
+
+main{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main:nth-of-type(1){
+    background-image: url('gif/fundo.gif');
+    background-color: #000000;
+    height: 600px;
+    margin: auto;
+}
+
+main:nth-of-type(3){
+    background-image: url('gif/espaço.gif');
+    background-color: #000000;
+    height: 600px;
+    margin: auto;
+}
+
+main:nth-of-type(5){
+    background-image: url('gif/fantasma.gif');
+    background-color: rgba(36, 17, 17, 0);
+    background-size: 300px;
+    height: 400px;
+    background-position: bottom center;
+    margin: auto;
+}
