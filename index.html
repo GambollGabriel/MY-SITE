@@ -2,63 +2,148 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
-        <header>
-            <nav>
-                <a href="https://github.com/GambollGabriel" rel="external" target="_blank" >GitHub</a>
-                <a href="https://open.spotify.com/collection/tracks" rel="external" target="_blank" >Música</a>
-            </nav>
-        </header>
+    <header>
+        <div id="gam">
 
-        <hr>
+            <img src="" alt="">
 
-        <section>
-          <h2>M.G.</h2>
-          <img src="imagens/eu sou batman.jpg" alt="foto do Marcos Gabriel">
-          <p>Nome: Marcos Gabriel Dias Fernandes</p>
-          <p>Idade: 16</p>
-          <p>Adm</p>
-          <p>"Tem que ser bem feito, não perfeito"</p>
-        </section>
-
-        <section>
-
-            <h2>Minhas fotos</h2>
-       
-            <div>
+            <form action="post">
                 
-                <div class="quadro" >
-                    <img class="foto" src="imagens/foto-1-1.jpeg" alt="foto minha 1-1"></div>
+                <input type="text" name="pesquisa" id="Ipesquisa" placeholder="Pesquise" size="30px">
+                
+            </form>
 
-                <div class="quadro" >
-                    <img class="foto" src="imagens/foto-2.jpeg" alt="foto minha 2">
+            <span id="menuu" onclick="clickMenu() "class="material-symbols-outlined">menu</span>
+        </div>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Transparência</a></li>
+                        <li><a href="#">Servidores</a></li>
+                        <li><a href="#">Prestadores</a></li>
+                        <li><a href="#">Diretoria</a></li>
+                        <li><a href="#">Entre em contato</a></li>
+                    </ul>
+                </menu>
+        
+    </header>
+    <main>
+       <!--  Educação Infantil: Cardapio  Cronograma 
+         Projeto: Atividades  Cardapio Matricula  -->
+
+         <section id="sec1" >
+
+         <nav id="menu2">
+            <ul>
+              <li class="menu-item">
+                Educação Infantil
+                <ul class="submenu">
+                  <li><a href="#">Cardápio</a></li>
+                  <li><a href="#">Cronograma</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                Projeto
+                <ul class="submenu">
+                  <li><a href="#">Atividades</a></li>
+                  <li><a href="#">Cardápio</a></li>
+                  <li><a href="#">Matrícula</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+
+
+            <div id="ori" >
+                <div id="lado1">
+                    <div id="carouselExampleIndicators" class="carousel slide pad" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" style="height: 400px;">
+                            <div class="carousel-item h-100 active" style="background-image: url(fotos/imag-teste.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; ">
+                            </div>
+                            <div class="carousel-item h-100" style="background-image: url(fotos/imag-teste.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; ">
+                            </div>
+                            <div class="carousel-item h-100" style="background-image: url(fotos/imag-teste.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; ">
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                    </div>
                 </div>
-
-                <div class="quadro" >
-                    <img class="foto" src="imagens/foto-3-3.jpeg" alt="foto minha 3-3">
-                </div>
-
+            </section>
+                <section id="sec2">
+                    <h3>Campanhas</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="campanha"><img src="fotos/imag-teste.jpg" alt=""></div>
+                            <div class="campanha"><img src="fotos/imag-teste.jpg" alt=""></div><br>
+                        </div>
+                        <div class="row">
+                            <div class="campanha"><img src="fotos/imag-teste.jpg" alt=""></div>
+                            <div class="campanha"><img src="fotos/imag-teste.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </section>
             </div>
+        
+        <section id="sec3"></section>
 
-        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Informações de Contato</h4>
+                <p>Endereço: Lorem yt</p>
+                <p>Email: projeto@gmail.com</p>
+                <p>CNPJ: 0000-0000</p>
+                <p>Razão Social: --------</p>
+            </div>
+            <div class="footer-column">
+                <h4>Redes Sociais</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
 
-        <section>
-            <div id="gif"></div>
-            <audio src="audio/musica.mp4" controls></audio>
-        </section>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }
 
-<!--
-        <main></main>
-        <main></main>
-        <main></main>
-        <main></main>
-        <main></main>
--->
+    }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
